@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class StackArray {
 private:
     static const int MAX_SIZE = 100; // Maximum size of the stack
@@ -36,15 +35,12 @@ public:
         return stack[top--];
     }
 };
-
 int main() {
     StackArray stack;
     stack.push(1);
     stack.push(2);
     stack.push(3);
-
     cout << "Popped: " << stack.pop() << endl;
     cout << "Popped: " << stack.pop() << endl;
-
     return 0;
 }
